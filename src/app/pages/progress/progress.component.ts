@@ -1,15 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-progress',
-  templateUrl: './progress.component.html',
-  styles: []
+  templateUrl: './progress.component.html'
 })
-export class ProgressComponent implements OnInit {
-
-  constructor() { }
-
-  ngOnInit() {
-  }
-
-}
+export class ProgressComponent {}
