@@ -7,6 +7,7 @@ import { Graficas1Component } from './graficas1/graficas1.component';
 import { PagesComponent } from './pages.component';
 import { IncrementadorComponent } from '../components/incrementador/incrementador.component';
 import { GraficoDonaComponent } from '../components/grafico-dona/grafico-dona.component';
+import { AccountSettingsComponent } from './account-settings/account-settings.component';
 
 // Modules
 import { SharedModule } from '../shared/shared.module';
@@ -23,7 +24,8 @@ import { ChartsModule } from 'ng2-charts';
     ProgressComponent,
     Graficas1Component,
     IncrementadorComponent,
-    GraficoDonaComponent
+    GraficoDonaComponent,
+    AccountSettingsComponent
   ],
   imports: [
     SharedModule,
@@ -37,4 +39,4 @@ import { ChartsModule } from 'ng2-charts';
     Graficas1Component
   ]
 })
-export class PagesModule { }
+export class PagesModule {}

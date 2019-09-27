@@ -1,8 +1,20 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
+declare function init_plugins(): any;
 
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
   styleUrls: ['./login.component.css']
 })
-export class LoginComponent {}
+export class LoginComponent {
+
+  constructor( public router: Router ) {
+    init_plugins();
+  }
+
+  ingresar() {
+    this.router.navigate(['/dashboard']);
+  }
+
+}
