@@ -6,7 +6,8 @@ import { AppRoutingModule } from './app-routing.module';
 
 // Modules
 import { PagesModule } from './pages/pages.module';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 // Components
 import { AppComponent } from './app.component';
@@ -23,7 +24,9 @@ import { RegisterComponent } from './login/register.component';
     BrowserModule,
     PagesModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
